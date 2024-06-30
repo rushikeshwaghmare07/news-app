@@ -53,7 +53,11 @@ function bindData(articles) {
 
 let curSelectedNav = null;
 function onNavItemClick(id) {
+  if (id === "home") {
+    fetchNews("India");
+  } else {
     fetchNews(id);
+  }
     const navItem = document.getElementById(id);
     curSelectedNav?.classList.remove("active");
     curSelectedNav = navItem;

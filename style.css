@@ -54,12 +54,20 @@ body {
   cursor: pointer;
 }
 
+.nav-links a {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav-links :hover {
-  text-decoration: underline;
+  color: #1ec1f7;
 }
 
 .nav-item.active {
-  color: red;
+  color: rgb(84, 182, 228);
+  text-decoration: underline;
 }
 
 .header {
