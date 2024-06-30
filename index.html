@@ -15,25 +15,24 @@
 
   <nav class="navbar">
     <div class="logo">
-      <img src="./assets/news.png" alt="News App Logo">
-      <h1 class="app-name">QuickNews</h1>
+      <img onclick="reload()" src="./assets/news.png" alt="News App Logo">
+      <h1 onclick="reload()" class="app-name">QuickNews</h1>
     </div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">World</a></li>
-      <li><a href="#">Technology</a></li>
-      <li><a href="#">Business</a></li>
-      <li><a href="#">Entertainment</a></li>
-      <li><a href="#">Sports</a></li>
-      <li><a href="#">Science</a></li>
+      <li class="nav-item" id="world" onclick="onNavItemClick('world')">World</li>
+      <li class="nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+      <li class="nav-item" id="business" onclick="onNavItemClick('business')">Business</li>
+      <li class="nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+      <li class="nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+      <li class="nav-item" id="science" onclick="onNavItemClick('science')">Science</li>
     </ul>
   </nav>
   <header class="header">
     <h1>Welcome to News App</h1>
-    <form id="search-form">
+    <div id="search-form">
       <input type="text" id="search-bar" placeholder="Search for news...">
-      <button type="submit">Search</button>
-    </form>
+      <button id="search-button" type="submit">Search</button>
+    </div>
   </header>
 
   <main>
@@ -45,7 +44,7 @@
   <template id="template-news-card">
       <div class="card">
         <div class="card-header">
-          <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+          <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img" loading="lazy">
         </div>
         <div class="card-content">
           <h3 id="news-title">This is the Title</h3>
