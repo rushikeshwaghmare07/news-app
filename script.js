@@ -20,8 +20,30 @@ function bindData(articles) {
   articles.forEach(articles => {
     if (!articles.urlToImage) return;
     const cardClone = newsCardTemplate.content.cloneNode(true);
+    fillDataInCard(cardClone, articles);
     cardContainer.appendChild(cardClone);
   });
 
+  function fillDataInCard(cardClone, article) {
+    const newsImg = cardClone.querySelector("#news-img");
+    const newsTitle = cardClone.querySelector("#news-title");
+    const newsSource = cardClone.querySelector("#news-source");
+    const newsDesc = cardClone.querySelector("#news-desc");
+
+    newsImg.src = article.urlToImage;
+    newsTitle.innerHTML = article.title;
+    newsDesc.innerHTML = article.description;
+
+    const date = new Date(article.publishedAt).toLocaleString("en-US", {
+      timeZone: "Asia/Jakarta",
+    });
+
+    newsSource.innerHTML = `${article.source.name} · ${date}`;
+
+    cardClone.firstElementChild.addEventListener("click", () => {
+      window.open(article.url, "_blank");
+    });
+
+  }
 }
 
