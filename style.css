@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #444;
+  color: #fff;
+}
+
+.header h1 {
+  margin: 0 0 20px;
+  font-size: 2.5em;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+#search-bar {
+  width: 50%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.news-container {
+  padding: 20px;
+}
+
