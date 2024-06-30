@@ -12,3 +12,17 @@ QuickNews is a dynamic and user-friendly news application that fetches the lates
 - Clickable News Cards: Each news card can be clicked to open the full article in a new tab.
 
 
+### Home Page
+![news-app](https://github.com/rushikeshwaghmare07/news-app/assets/140525513/8c851d44-b696-412e-99f6-4f8b9fc8f2d0)
+
+
+### Search News
+![news-app-seraching](https://github.com/rushikeshwaghmare07/news-app/assets/140525513/de7371f3-8cb9-4afe-821e-7127e507e30c)
+
+
+
+
+
+
+
+
